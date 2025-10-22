@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+ :root{
+  --bg:#fffefb;  --text:#1e2430;  --muted:#5a6070; --reef:#a5f3fc;    
+  --ocean:#39ce14;   --leaf:#0f766e;--mango:#66fcff; --lime:#22c55e;   
+  --coral:#c2410c;  --surface:#ffffff; --border:#e8edf2;--radius:16px;
+  --shadow:0 12px 28px rgba(0,0,0,.08);
+}
+
+*,*::before,*::after{ box-sizing:border-box; }
+html,body{ margin:0; padding:0; }
+body{
+  font-family:"Poppins",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  color:var(--text); line-height:1.6;
+  background:
+    radial-gradient(1200px 800px at 10% -10%, rgba(72,202,228,.25), transparent 60%),
+    radial-gradient(1000px 700px at 110% 10%, rgba(255,183,3,.18), transparent 55%),
+    var(--bg);
+} 
+.container{ width:min(1100px,92vw); margin-inline:auto; padding-inline:16px; }
+
+/* HEADER */
+header{
+  padding:28px 16px; color:#0b1220; box-shadow:var(--shadow);
+  background:linear-gradient(135deg,var(--reef),var(--ocean));
+  border-bottom:4px solid var(--mango);
+}
+header h1{ margin:0 0 6px; font-weight:800; letter-spacing:.5px; color:#07151a; }
+.lead{ margin:0; font-weight:500; }
+
+/* NAVBAR */
+.navbar{ background:var(--surface); border-bottom:1px solid var(--border); position:sticky; top:0; z-index:5; }
+.navbar ul{
+  list-style:none; display:flex; justify-content:center; flex-wrap:wrap; gap:8px;
+  margin:0; padding:10px 16px;
+}
+.navbar a{
+  display:inline-block; text-decoration:none; color:var(--text); background:#f7fbff;
+  padding:10px 14px; border:1px solid var(--border); border-radius:10px;
+  transition:transform .2s, background .2s, border-color .2s;
+}
+.navbar a:hover{ transform:translateY(-1px); background:#eef7ff; border-color:#d8e7f5; }
+
+/* POSTS / CARDS */
+.post{
+  background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+  padding:18px; margin:18px 16px; box-shadow:var(--shadow);
+}
+.post-header h3{ margin:0 0 10px; color:var(--leaf); font-weight:700; }
+.subtitulo{ margin-top:10px; color:var(--muted); font-size:.95rem; }
+
+/* IMÁGENES */
+.img-zoom, .img-fixed{
+  display:block; width:100%; height:auto; border-radius:12px;
+  border:1px solid var(--border); box-shadow:0 8px 20px rgba(0,0,0,.05);
+  transition:transform .25s, box-shadow .25s;
+}
+.img-zoom:hover, .img-fixed:hover{ transform:scale(1.03); box-shadow:0 16px 36px rgba(0,0,0,.12); }
+
+/* BLOG: tamaño uniforme */
+.img-fixed{ height:260px; object-fit:cover; }
+.blog-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:12px; }
+
+/* TABLAS */
+table img{ max-width:100%; height:auto; border-radius:10px; }
+.table, .tabla-compras{ width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--border); border-radius:12px; overflow:hidden; }
+.tabla-compras thead th{
+  background:linear-gradient(135deg,var(--mango),#ffd166);
+  color:#1f1400; text-align:left; font-weight:700; padding:12px 14px; border:1px solid var(--border);
+}
+.tabla-compras td{ padding:12px 14px; border:1px solid var(--border); }
+.tabla-compras tbody tr:nth-child(even) td{ background:#f8fffd; }
+.tabla-compras tbody tr:hover td{ background:#f1fbff; }
+
+/* FORMULARIOS / BOTONES */
+fieldset{
+  border:2px dashed #d8f3dc; background:#fafffe; border-radius:12px; padding:16px;
+}
+label{ display:block; margin-bottom:12px; color:var(--text); }
+input[type="text"],input[type="email"],textarea{
+  width:100%; padding:10px 12px; border:1px solid var(--border); border-radius:10px; background:#fff; outline:none;
+  transition:border-color .2s, box-shadow .2s;
+}
+input[type="text"]:focus,input[type="email"]:focus,textarea:focus{
+  border-color:var(--lime); box-shadow:0 0 0 4px rgba(46,196,182,.15);
+}
+.submitbutton, button, input[type="submit"]{
+  display:inline-block; padding:10px 16px; border:1px solid var(--coral); border-radius:10px;
+  background:linear-gradient(135deg,var(--coral),#ff7647); color:#fff; cursor:pointer;
+  transition:transform .15s, box-shadow .15s, filter .2s;
+}
+.submitbutton:hover, button:hover, input[type="submit"]:hover{
+  transform:translateY(-1px); box-shadow:0 10px 22px rgba(251,86,7,.25); filter:brightness(1.02);
+}
+
+/* FOOTER */
+footer{
+  padding:20px 16px; margin-top:26px; border-top:2px solid #caf0f8;
+  background:linear-gradient(135deg,#e6fff7,#fff9e6);
+}
+
+/* RESPONSIVE */
+@media (max-width:640px){
+  .navbar ul{ gap:6px; }
+  .post{ margin:14px 10px; padding:14px; }
+  .blog-grid{ grid-template-columns:1fr; }
+}
