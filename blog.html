@@ -1,0 +1,97 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog | Los viajes de Elba</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <h1>LOS VIAJES DE ELBA</h1>
+      <p class="lead">Historias cortas y tips para tu próximo viaje.</p>
+    </div>
+  </header>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="container">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="fotos.html">Fotos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CONTENIDO -->
+  <main class="container">
+
+    <!-- POST 1 (imagen uniforme) -->
+    <div class="post" id="post-b1">
+      <div class="post-header">
+        <h3>Central Park en otoño</h3>
+        <img src="IMG/central-park.jpg" alt="Sendero en Central Park" class="img-fixed" loading="lazy">
+        <p class="subtitulo">
+          Publicado el <time datetime="2015-09-20 10:00">20 de Septiembre de 2015</time> |
+          Categorías: <a href="#">parques</a>, <a href="#">EE.UU.</a>
+        </p>
+      </div>
+      <div class="post-body">
+        <p>Un respiro verde entre rascacielos. Lugares clave: The Mall, Bow Bridge y Bethesda Terrace…</p>
+      </div>
+    </div>
+
+    <!-- POST 2 (imagen uniforme) -->
+    <div class="post" id="post-b2">
+      <div class="post-header">
+        <h3>Cómo ahorrar en ciudades caras</h3>
+        <img src="IMG/new-york-city.jpg" alt="Vista de Nueva York" class="img-fixed" loading="lazy">
+        <p class="subtitulo">
+          Publicado el <time datetime="2015-09-05 09:30">5 de Septiembre de 2015</time> |
+          Categorías: <a href="#">ahorro</a>, <a href="#">consejos</a>
+        </p>
+      </div>
+      <div class="post-body">
+        <p>Camina, usa metro con tarjeta semanal, busca <em>happy hours</em> y free tours…</p>
+      </div>
+    </div>
+
+    <!-- GALERÍA DEL BLOG (misma organización y tamaño) -->
+    <div class="post" id="blog-galeria">
+      <div class="post-header">
+        <h3>Galería del blog</h3>
+        <p class="subtitulo">Todas con el mismo tamaño para una vista ordenada.</p>
+      </div>
+      <div class="post-body">
+        <div class="blog-grid">
+          <img src="IMG/skyline.jpg"       alt="Skyline de Manhattan"     class="img-fixed" loading="lazy">
+          <img src="IMG/estatua.jpeg"      alt="Estatua de la Libertad"   class="img-fixed" loading="lazy">
+          <img src="IMG/times.jpeg"        alt="Times Square de noche"    class="img-fixed" loading="lazy">
+          <img src="IMG/kohphiphi.jpg"     alt="Playa de Koh Phi Phi"     class="img-fixed" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <h4>¿Te gusta leer el blog?</h4>
+      <form>
+        <fieldset>
+          <label>Nombre: <input type="text" name="nombre" required></label>
+          <label>Email: <input type="email" name="mail" required></label>
+          <input type="submit" value="Suscribirme" class="submitbutton">
+        </fieldset>
+      </form>
+    </div>
+  </footer>
+
+</body>
+</html>

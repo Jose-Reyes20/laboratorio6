@@ -1,0 +1,73 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fotos | Los viajes de Elba</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <h1>LOS VIAJES DE ELBA</h1>
+      <p class="lead">Galería sencilla con tus mejores momentos.</p>
+    </div>
+  </header>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="container">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="fotos.html">Fotos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- GALERÍA -->
+  <main class="container">
+    <div class="post" id="galeria">
+      <div class="post-header">
+        <h3>Galería</h3>
+        <p class="subtitulo">Imágenes destacadas del viaje.</p>
+      </div>
+
+      <div class="post-body">
+        <table>
+          <tr>
+            <td><img src="IMG/skyline.jpg"       alt="Skyline de Manhattan"        class="img-zoom" loading="lazy"></td>
+            <td><img src="IMG/central-park.jpg"  alt="Central Park en otoño"       class="img-zoom" loading="lazy"></td>
+          </tr>
+          <tr>
+            <td><img src="IMG/estatua.jpeg"      alt="Estatua de la Libertad"      class="img-zoom" loading="lazy"></td>
+            <td><img src="IMG/times.jpeg"        alt="Times Square iluminado"      class="img-zoom" loading="lazy"></td>
+          </tr>
+          <tr>
+            <td><img src="IMG/new-york-city.jpg" alt="Nueva York al atardecer"     class="img-zoom" loading="lazy"></td>
+            <td><img src="IMG/kohphiphi.jpg"     alt="Playa de Koh Phi Phi"        class="img-zoom" loading="lazy"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <h4>¿Quieres que suba tus fotos favoritas?</h4>
+      <form>
+        <fieldset>
+          <label>Nombre: <input type="text" name="nombre" required></label>
+          <label>Email: <input type="email" name="mail" required></label>
+          <input type="submit" value="Enviar" class="submitbutton">
+        </fieldset>
+      </form>
+    </div>
+  </footer>
+
+</body>
+</html>

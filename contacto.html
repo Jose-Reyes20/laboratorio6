@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | Los viajes de Elba</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>LOS VIAJES DE ELBA</h1>
+    <p class="lead">Escríbeme y planifiquemos un viaje.</p>
+  </header>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="fotos.html">Fotos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </div>
+
+   
+  <div class="post" id="form-contacto">
+    <div class="post-header">
+      <h3>Contacto</h3>
+      <p class="subtitulo">Déjame tu mensaje y te respondo.</p>
+    </div>
+    <div class="post-body">
+      <form>
+        <fieldset>
+          <label>Nombre: <input type="text" name="nombre" required></label>
+          <label>Email: <input type="email" name="mail" required></label>
+          <label>Mensaje:
+            <textarea name="mensaje" rows="5" required></textarea>
+          </label>
+          <input type="submit" value="Enviar mensaje" class="submitbutton">
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <h4>Gracias por visitar Los viajes de Elba</h4>
+    <form>
+      <fieldset>
+        <label>Correo para novedades: <input type="email" name="suscripcion" required></label>
+        <input type="submit" value="Suscribirme" class="submitbutton">
+      </fieldset>
+    </form>
+  </footer>
+
+</body>
+</html>
